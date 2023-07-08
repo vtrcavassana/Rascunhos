@@ -15,15 +15,22 @@ else:
 # Função para solicitar ao usuário a quantidade de chaves para o objeto JSON
 def quantidadesDeChaves():
     # Solicita a quantidade de chaves ao usuário
-    qnt = int(input('Digite a quantidade de chaves que você deseja criar no JSON: '))
+    qnt = input('Digite a quantidade de chaves que você deseja criar no JSON: ')
     # Entra em um loop infinito
     while True:
-        # Se a quantidade for 0 ou negativa
-        if qnt <= 0:
-            qnt = int(input('Quantidade inválida!\nDigite novamente a quantidade de chaves que deseja criar no JSON: '))  # Solicita ao usuário que digite novamente
+        # Verifica se a variável contém apenas números
+        if not qnt.isnumeric():
+            qnt = input('Quantidade inválida!\nDigite novamente a quantidade de chaves que deseja criar no JSON: ')  # Solicita ao usuário que digite novamente
         else:
-            # Sai do loop se a quantidade for um número positivo
-            break
+            # Se tiver, tranforma em inteiro
+            qnt = int(qnt)
+            # Se a quantidade for 0
+            if qnt <= 0:
+                # Solicita ao usuário que digite novamente
+                qnt = input('Quantidade inválida!\nDigite novamente a quantidade de chaves que deseja criar no JSON: ')
+            else:
+                # Sai do loop se a quantidade for um número positivo
+                break
     # Retorna a quantidade
     return qnt
 
