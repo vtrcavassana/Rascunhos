@@ -97,12 +97,12 @@ def copiandoJSON(json_str):
     # Se a quantidade for zero
     if repeticao == 0:
         # Cria uma lista com o objeto JSON sozinho
-        lista_de_objetos = [objeto]
+        listaDeObjetos = [objeto]
     else:
         # Cria uma lista com o objeto JSON replicado
-        lista_de_objetos = [objeto] * repeticao
+        listaDeObjetos = [objeto] * repeticao
     # Retorna a lista de objetos JSON
-    return lista_de_objetos
+    return listaDeObjetos
 
 def criandoArquivoJSON(lista_de_objetos):
     # Abre o arquivo 'dados.json' em modo de escrita
