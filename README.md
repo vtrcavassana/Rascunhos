@@ -2,19 +2,27 @@
 
 Porque tenho preguiça.
 
-## Gerador JSON
+## Scripts
 
-Este script foi criado com o propósito de facilitar a criação de arquivos JSON personalizados para tarefas cotidianas e profissionais, ao mesmo tempo que proporciona uma oportunidade para aprofundar o conhecimento em Python.
+Este projeto inclui os seguintes scripts:
 
-## Sobre o Gerador_JSON
+- **Gerador_JSONS**: Este script gera arquivos JSON baseados na entrada do usuário.
 
-O script "Gerador_JSON" auxilia na geração de arquivos JSON. Através de prompts interativos, o usuário pode especificar o número de chaves a serem incluídas em um objeto JSON, o nome de cada chave, o tipo de valor (string ou número) associado a cada chave e a quantidade de vezes que este objeto deve ser replicado no arquivo JSON (se quiser, senão quando for perguntado, basta digitar 0).
+- **Gerador_JSONS_v2**: Uma versão melhorada do Gerador_JSONS. Este script copia um objeto JSON especificado várias vezes em um novo arquivo. Ele primeiro solicita ao usuário o nome do arquivo JSON a ser copiado, o nome do novo arquivo a ser criado e a quantidade de vezes que o objeto deve ser copiado. Este script também inclui uma função para deletar o novo arquivo se ele já existir antes de criar a nova versão.
 
-## Como Usar
+- **Conversor_Tempo**: Este script permite ao usuário converter unidades de tempo entre segundos, minutos, horas e dias.
 
-1. Clone este repositório ou faça o download do script "Gerador_JSON.py".
-2. Execute o script no terminal com o comando `python Gerador_JSON.py`.
-3. Siga as instruções do prompt para gerar o arquivo JSON.
+- **pyproject.toml** e **poetry.lock**: Estes são arquivos de configuração para o Poetry, que é uma ferramenta para gerenciamento de dependências e empacotamento em Python.
+
+Este projeto também inclui um arquivo JSON de teste que pode ser usado para testar o script Gerador_JSONS_v2.
+
+## Executando os Scripts
+
+Para executar qualquer um dos scripts, você pode usar o seguinte comando:
+
+```bash
+python <nome_do_script>.py
+```
 
 ## Ambiente
 
